@@ -2,20 +2,15 @@
 <html>
 
 <head>
-    <title>Current Date</title>
+    <title>Title of the document</title>
 </head>
 
 <body>
-
-    <h2>Current Date</h2>
-
-    <div id="current_date"></div>
-
     <script>
-        var today = new Date();
-        document.getElementById("current_date").innerHTML = today.toDateString();
+        dateToday = new Date().toISOString().slice(0, 10).replace(/-/g, "");
+        let url = "https://m.sports.naver.com/kbaseball/video?sort=date&date=" + dateToday + "&tab=date&themeType=type&themeCode=2";
+        window.location.href = url;
     </script>
-
 </body>
 
 </html>
