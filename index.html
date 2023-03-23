@@ -2,15 +2,17 @@
 <html>
 
 <head>
-    <title>Title of the document</title>
+    <title>네이버 스포츠 링크 모음</title>
 </head>
 
 <body>
+    <button type="button" onclick="redirectFunc()">네이버 야구 하이라이트</button>
     <script>
-        // dateToday = new Date().toISOString().slice(0, 10).replace(/-/g, "");
-        dateToday = new Date().toISOString().slice(0, 10);
+        let dateToday = new Date().toISOString().slice(0, 10);
         let url = "https://m.sports.naver.com/kbaseball/video?sort=date&date=" + dateToday + "&tab=date&themeType=type&themeCode=2";
-        window.location.href = url;
+        function redirectFunc() {
+            window.location.href = url;
+        }
     </script>
 </body>
 
