@@ -9,7 +9,11 @@
     <h1>My First Web Page</h1>
     <p>My first paragraph.</p>
     <script>
-        alert("Hello World!");
+        const elements = document.querySelectorAll("https://m.sports.naver.com/kbaseball/video?sort=date&date=2023-03-21&tab=date&themeType=type&themeCode=2 .VideoList_link_video__TlHcC");
+        for (let i = 0; i < elements.length; i++) {
+            const element = elements[i];
+            console.log(element.href);
+        }
     </script>
 </body>
 
